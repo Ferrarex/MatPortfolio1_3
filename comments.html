@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENVIAR COMENTÁRIO</title>
+</head>
+
+<body>
+
+    <!--#region BARRA DE NAVEGAÇÃO  -->
+    <table>
+        <tr>
+            <td><a href="index.html">HOME</a></td>
+            <td><a href="tri1.html">1° Trimestre</a></td>
+            <td><a href="tri2.html">2° Trimestre</a></td>
+            <td><a href="tri3.html">3° Trimestre</a></td>
+            <td><a href="comments.html">Enviar Comentários</a></td>
+            <td><a href="graphicdesign.html" class="graphicdesignismypassion">Graphic Design</a></td>
+        </tr>
+    </table>
+    <br><br>
+    <!--#endregion-->
+
+    <br>
+    <div id="formulario">
+        <form action="/action_page.php">
+            <div class="caixa" style="width: 400px;">
+
+                <label for="fullname">Nome Completo<red>*</red><grey>:</grey></label><br><br>
+                <input type="text" id="fullname" name="fullname" required placeholder="Seu Nome:"><br>
+
+                <br><br>
+
+                <label for="useremail">Email para contato<red>*</red><grey>:</grey></label><br><br>
+                <input type="email" id="useremail" name="useremail" required placeholder="Seu email:"><br>
+
+            </div>
+
+            <br>
+
+            <div class="caixa" style="width: 400px;">
+                <label for="arquivo">Enviar arquivo <grey>(Opicional):</grey></label><br><br>
+                <input type="file"><br>
+            </div>
+
+            <br>
+
+            <div class="caixa" style="width: 400px;">
+                <label for="data">Data de Nascimento<red>*</red><grey>:</grey></label><br><br>
+                <input type="date" required><br>
+            </div>
+
+            <br>
+
+            <div class="caixa" style="width: 400px;">
+                <label for="Enviar">Já acabou seu comentário?</label><br><br>
+                <input type="submit" value="Enviar comentário!">
+            </div>
+
+        </form>
+    </div>
+
+</body>
+
+</html>

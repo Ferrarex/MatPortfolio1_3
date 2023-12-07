@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2° TRIMESTRE</title>
+</head>
+
+<body>
+    <!--#region BARRA DE NAVEGAÇÃO  -->
+    <table>
+        <tr>
+            <td><a href="index.html">HOME</a></td>
+            <td><a href="tri1.html">1° Trimestre</a></td>
+            <td><a href="tri2.html">2° Trimestre</a></td>
+            <td><a href="tri3.html">3° Trimestre</a></td>
+            <td><a href="comments.html">Enviar Comentários</a></td>
+            <td><a href="graphicdesign.html" class="graphicdesignismypassion">Graphic Design</a></td>
+        </tr>
+    </table>
+    <br><br>
+    <!--#endregion-->
+
+    <div class="caixa">
+        <h1 style="text-align: center;">2° Trimestre:</h1>
+        <h2>
+            Conteúdos contemplados: <grey><br>(Aperte para ir até o conteúdo)</grey><br>
+            <a style="text-decoration: none;" href="#conteudo1"><white>Funções Afim;</white></a><br>
+            <a style="text-decoration: none;" href="#conteudo2"><white>Funções Quadráticas;</white></a><br>
+            <a style="text-decoration: none;" href="#conteudo3"><white>Funções Exponenciais;</white></a><br>
+            <a style="text-decoration: none;" href="#conteudo4"><white>Logaritmos + Equações Logaritmicas.</white></a><br>
+        </h2>
+    </div>
+
+    <h1 id="conteudo1">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        <h1>Funções Afim:</h1>
+        <h1>f(x) = ax + b</h1>
+        <p>Para interpretar ou fazer os graficos, é necessário aprender plano cartesiano</p>
+        <p>É um plano com 2 direções, X e Y, onde adotamos Y como altura, e X como largura</p>
+        <p>Se já temos a função, podemos substituir um valor tanto no lado esquerdo, para descobrir o X correspondente, quanto no lado direito, para conseguir o Y correspondente.</p>
+        <p>
+            Regras principais:<br>
+            Se A > 0, gráfico crescente;<br>
+            Se A < 0, gráfico decrescente;<br>
+            Se A = 0, constante.
+        </p>
+        <p>
+            O ideal é saber ao menos o corte no eixo Y, e o corte no eixo X. Que podem ser adquiridos com:<br>
+            <grey>Corte no eixo X)</grey> Y = 0, ou seja, 0 = (função) ou também, -b/a<br>
+            <grey>Corte no eixo Y)</grey> X = 0, ou seja, f(0) = (função, substituindo X por 0)<br>
+            <p>É legal notar que na função afim, o corte no eixo Y, é sempre o valor "b" da função</p>
+
+            <p>Supondo que nossa função é: f(x) = 2x + 3</p>
+            <img src="images/afimEX1.png">
+            <p>
+                <grey>CorteY)</grey> <pink>0 = 2x + 3 =</pink> -2x = 3 = x = -3 / 2 = <resp>-1,5</resp><br>
+                <br>
+                <grey>CorteX)</grey> <pink>f(0) = 2 * 0 + 3 = </pink> <resp>3</resp>
+            </p><br>
+            <p>
+                Como descobrir "a" e "b"?<br><br>
+                Precisamos da variação de X e Y. <grey>a = Δy / Δx</grey><br>
+                Então pegamos dois pontos. Exemplo: Supondo que recebemos: f(0,5) = 4 e f(1) = 5<br>
+                
+                a = (4 - 5) / (0,5 - 1) = <resp>2</resp><br>
+                Agora, para descobrirmos o "b", basta substituir
+                f(1) = 5<br>
+                f(1) = 2 * 1 + b<br>
+                5 = 2 * 1 + b<br>
+                5 = 2+b<br>
+                5 - 2 = b<br>
+                <resp>b = 3</resp>
+
+            </p>
+
+        </p>
+
+        <h3>Atividade no GeoGebra:</h3>
+        <iframe src="https://www.geogebra.org/classic/dck7jba7?embed" width="1100px" height="600px" allowfullscreen frameborder="0"></iframe>
+        <p>
+            Comentários:<br>
+            Achei o conteúdo relativamente fácil, já tinha trabalhado com plano cartesiano anteriormente, então foi só questão de entender que o X é como se fosse o tempo da física, e fazer essa interligação. Além de que já usava plano cartesiano na programação em GML.<br>
+            <pink>Dificuldade</pink>: 2,1
+        </p>
+    </div>
+    
+    <h1 id="conteudo2">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        
+        <h1>Funções Quadráticas:</h1>
+        <h1>f(x) = ax<sup>2</sup> + bx + c</h1>
+        
+        <p>
+            Regras principais:<br>
+            Se a > 0, concavidade para cima;<br>
+            Se a < 0, concavidade para baixo;<br>
+            Se a = 0, não é função afim;<br>
+            ∆ > 0 parábola passa do corte em Y;<br>
+            ∆ = 0 parábola encosta perfeitamente no corte em Y;<br>
+            ∆ < 0 parábola não encosta no corte em Y;
+            <br>
+            Quanto mais perto "a" for de 0, menor a concavidade;<br>
+            Quanto mais longe "a" for de 0, mais extrema a concavidade<br>
+            Corte em Y definido somente por "c" ("a" e "b" não o afeta).
+        </p>
+        
+        <p>
+            Para desenhar a nossa função, o ideal é descobrir o corte em X, as raízes (quando existem), o vértice e alguns pontos aleatórios ajudam também.<br>
+        </p>
+        <p>
+            Supondo que nossa função é: f(x) = 3x<sup>2</sup> + 5x + 2
+        </p>
+        <p>
+            A primeira coisa que devemos fazer, é entender o valor de cada um.<br>
+            a = 3<br>
+            b = 5<br>
+            c = 2
+        </p>
+        <p>
+            Então, podemos checar se a função tem raízes, e de quebra, pegamos o delta (∆) também. <grey>Ou seja, pegamos o corte em Y</grey><br>
+            0 = 3x<sup>2</sup> + 5x + 2
+        </p>
+        <p>
+            Agora, aplicamos bhaskara<br><br>
+            <sup>-b ± √(b² – 4 * a * c)</sup> / <sub>2 * a</sub><br><br>
+            <sup>-5 ± √(5² – 4 * 3 * 2)</sup> / <sub>2 * 3</sub><br><br>
+            <sup>-5 ± √(25–24)</sup> / <sub>6</sub><br><br>
+            ∆ = 1<br><br>
+            <sup>-5 ± 1</sup> / <sub>6</sub><br><br>
+            <resp>x<sub>1</sub> = <sup>-2</sup>/<sub>3</sub> ㅤ & ㅤ x<sub>2</sub> = -1</resp><br><br>
+        </p>
+        <p>
+            Agora, precisamos descobrir os vértices, tando de X, quanto de Y.<br><br>
+            <grey>Lembrando de que quando a parábola tem concavidade para cima, chamamos de ponto mínimo, e quando tem concavidade para cima, ponto máximo</grey><br><br>
+            As fórmulas são:<br>
+            x<sub>v</sub> = <sup>-b</sup>/<sub>2 * a</sub><br><br>
+            y<sub>v</sub> = <sup>-∆</sup>/<sub>4 * a</sub><br><br>
+            então:<br><br>
+            <resp>x<sub>v</sub> = <sup>-5</sup>/<sub>6</sub> ㅤ & ㅤ y<sub>v</sub> = <sup>-1</sup>/<sub>24</sub> ㅤ ou v = (<sup>-5</sup>/<sub>6</sub>, <sup>-1</sup>/<sub>24</sub>)</resp><br><br>
+        </p>
+        <p>
+            Agora, pegamos também alguns pontos aleatórios da função, para ajudar na construção.<br>
+            EX:<br>
+            f(1) = 3 * (1)<sup>2</sup> + 5 * (1) + 2<br>
+            f(1) = 3 + 5 + 2<br>
+            f(1) = 10ㅤㅤ<grey>Ou seja, quando X é 1, Y é 10</grey><br><br>
+            f(-2) = 3 * (-2)<sup>2</sup> + 5 * (-2) + 2<br>
+            f(-2) = 3 * 4 - 10 + 2<br>
+            f(-2) = 12 - 10 + 2<br>
+            f(-2) = 4ㅤㅤ<grey>Ou seja, quando X é -2, Y é 4</grey><br>
+            
+            <h3>Agora, vamos colocar em prática:</h3>
+            <img src="images/afimEX2.png">
+            <p>Pronto!</p>
+
+            <h3>Exemplos de questões resolvidas:</h3>
+            <a style="text-decoration: none;" href="https://www.todamateria.com.br/funcao-quadratica-exercicios/"><lightblue>https://www.todamateria.com.br/funcao-quadratica-exercicios/</lightblue></a><br>
+            <a style="text-decoration: none;" href="https://matematicabasica.net/exercicios-sobre-funcao-quadratica/"><lightblue>https://matematicabasica.net/exercicios-sobre-funcao-quadratica/</lightblue></a><br>
+            <a style="text-decoration: none;" href="https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-2-grau.htm"><lightblue>https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-2-grau.htm</lightblue></a><br>
+        </p>
+        
+        
+        
+        <h3>Atividade no Geogebra:</h3>
+        <iframe src="https://www.geogebra.org/classic/jjzbdtkn?embed" width="1100px" height="600px" allowfullscreen frameborder="0"></iframe>
+        <p>
+            Comentários:<br>
+            O conteúdo não é muito dificil, porém, se não prestar atenção é possível errar em coisas bobas, como o cálculo da bhaskara. É preciso ter cuidado. Além disso, se você se perde um pouco no inicio do conteúdo, você se perte. Ainda mais, é preciso ter conhecimento de conteúdos já estudados, como bhaskara.<br>
+            <pink>Dificuldade</pink>: 3,4
+        </p>
+    </div>
+    
+    <h1 id="conteudo3">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        
+        <h1>Funções Exponenciais:</h1>
+        <h1>f(x) = a<sup>x</sup></h1>
+        <h1><grey>Valor<sub>f</sub> = Valor<sub>i</sub> * (1 + (<sup>porcento</sup>/<sub>100</sub>))<sup>tempo</sup> </grey></h1>
+        <p>
+            Regras principais:<br>
+            Se A > 1, função crescente;<br>
+            Se 1 > A > 0, função decrescente;<br>
+            Se A ≤ 0, a função não existe;<br>
+            Quanto mais próximo de 1, mais plaina;<br>
+            Quanto maior, mais extrema.<br>
+        </p>
+        
+        <p>Montando a função:</p>
+        <p>
+            Supondo que nossa função é: f(x) = 2<sup>x</sup>
+        </p>
+        <p>
+            Você vai pegar a maior quantidade de X aleatórios possíveis. Quanto mais X, o mais fiel será.
+        </p>
+        <p>
+            f(-3) = 2<sup>-3</sup> = <resp>0,125</resp><br><br>
+            f(-2) = 2<sup>-2</sup> = <resp>0,25</resp><br><br>
+            f(-1) = 2<sup>-1</sup> = <resp>0,5</resp><br><br>
+            f(0) = 2<sup>0</sup> = <resp>1</resp><br><br>
+            f(1) = 2<sup>1</sup> = <resp>2</resp><br><br>
+            f(2) = 2<sup>2</sup> = <resp>4</resp><br><br>
+            f(3) = 2<sup>3</sup> = <resp>8</resp><br><br>
+            f(4) = 2<sup>4</sup> = <resp>16</resp><br><br>
+        </p>
+        <p>Após isso, basta ligar os pontos, seguindo o padrão exponencial.</p>
+        
+        <p>Resultado final:</p>
+        <img src="images/afimEX3.png">
+        <p>Pronto!</p>
+        
+        <h3>Exemplos de questões resolvidas:</h3>
+        <a style="text-decoration: none;" href="https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-exponencial.htm"><lightblue>https://exercicios.mundoeducacao.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-exponencial.htm</lightblue></a><br>
+        <a style="text-decoration: none;" href="https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-exponencial.htm"><lightblue>https://exercicios.brasilescola.uol.com.br/exercicios-matematica/exercicios-sobre-funcao-exponencial.htm</lightblue></a><br>
+        <a style="text-decoration: none;" href="https://www.todamateria.com.br/funcao-exponencial-exercicios/"><lightblue>https://www.todamateria.com.br/funcao-exponencial-exercicios/</lightblue></a><br>
+        
+        <h3>Atividade no GeoGebra:</h3>
+        <iframe src="https://www.geogebra.org/classic/w4m3nzjq?embed" width="1100px" height="600px" allowfullscreen frameborder="0"></iframe>
+        <p>
+            Comentários:<br>
+            Montar o gráfico, e encontrar os pontos é fácil, o que complica é formar a função de acordo com o problema.
+            <pink>Dificuldade</pink>: 5,2
+        </p>
+    </div>
+
+    <h1 id="conteudo4">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        <h1>Logaritmos + Equações Logaritmicas:</h1>
+        <p>
+            Primeiro, alguns principios.
+        </p>
+        <p>
+            Nomes dados:ㅤlog<sub>Base</sub>(Logaritmando) = Logaritmo<br>
+            Lembrando que, quando a base não aparece, ela é 10.
+        </p>
+        
+        <p>
+            Algumas regras:<br>
+            1ª: base > 0<br>
+            2ª: logatirmando > 0<br>
+            3ª: logaritmo ≠ 1
+        </p>
+        
+        <p>
+            EX:<br>log<sub>5</sub>(25) = 2ㅤㅤ<grey>(é o mesmo que: 5<sup>x</sup> = 25)</grey>
+        </p>
+
+        <p>
+            Existem consequencias da definição que o logarítmo tem:<br>
+            1ª: Se a base for igual ao logaritmando, o logaritmo é 1. log<sub>x</sub>(x) = 1ㅤㅤ<grey>x<sup>1</sup> = x</grey><br>
+            2ª: log<sub>a</sub>(a<sup>x</sup>) = xㅤㅤ<grey>a<sup>x</sup> = a<sup>x</sup></grey><br>
+            3ª: a<sup>log<sub>a</sub>(x)</sup> = x<br>
+            4ª: log<sub>a</sub>(x) = log<sub>a</sub>(y)ㅤㅤ<grey>y = x</grey>
+        </p>
+        <p>
+            Existem também, propriedades operatórias do logaritmo:<br>
+            1ª: log<sub>a</sub>(M * N) = log<sub>a</sub>(M) + log<sub>a</sub>(N)<br>
+            2ª: log<sub>a</sub>(M / N) = log<sub>a</sub>(M) - log<sub>a</sub>(N)<br>
+            3ª: log<sub>a</sub>(M<sup>N</sup>) = N * log<sub>a</sub>(M) <grey>e também,</grey> log<sub>a</sub>(<sup>N</sup>√M) = N / log<sub>a</sub>(M)<br>
+            4ª: log<sub>N</sub>(M) = log<sub>a</sub>(M) / log<sub>a</sub>(N)
+        </p>
+        <p>
+            Alguns exemplos:<br>
+            <grey>A)</grey> <pink>log<sub>5</sub>(125)</pink> = log<sub>5</sub>(5<sup>3</sup>) = 3 * 1 = <resp>3</resp><br>
+            <grey>B<sub>1</sub>)</grey> <pink>log<sub>4</sub>(16/4)</pink> = log<sub>4</sub>(16) - log<sub>4</sub>(4) = log<sub>4</sub>(4<sup>2</sup>) - 1 = 2 * 1 - 1 = <resp>1</resp><br>
+            <grey>B<sub>2</sub>)</grey> <pink>log<sub>4</sub>(16/4)</pink> = log<sub>4</sub>(4) = <resp>1</resp><br>
+            <grey>C)</grey> <pink>log<sub>6</sub>(12) - log<sub>6</sub>(2)</pink> = log<sub>6</sub>(12/2) = log<sub>6</sub>(6) = <resp>1</resp><br>
+            <grey>D)</grey> <pink>log<sub>12</sub>(<sup>3</sup>√144<sup>2</sup>)</pink> = 3 / 2 * log<sub>12</sub>(144) = 3 / 2 * log<sub>12</sub>(12<sup>2</sup>) = 3 / 2 * 2 = <resp>3</resp><br>
+        </p>
+    
+        <p>
+            Comentários:<br>
+            O conteúdo pode parecer difícil de cara, mas quando você começa a interligar a lógica de que o logaritmo é uma potenciação "invertida", fica mais simples. Porém, um ponto negativo é ter que decorar as propriedades (é possível também entender a lógica por trás para te tornar mais simples a aplicação também).<br>
+            <pink>Dificuldade</pink>: 4,1
+        </p>
+    
+    </div>
+
+</body>
+
+</html>

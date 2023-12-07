@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css/stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3° TRIMESTRE</title>
+
+</head>
+
+<body>
+    <!--#region BARRA DE NAVEGAÇÃO  -->
+    <table>
+        <tr>
+            <td><a href="index.html">HOME</a></td>
+            <td><a href="tri1.html">1° Trimestre</a></td>
+            <td><a href="tri2.html">2° Trimestre</a></td>
+            <td><a href="tri3.html">3° Trimestre</a></td>
+            <td><a href="comments.html">Enviar Comentários</a></td>
+            <td><a href="graphicdesign.html" class="graphicdesignismypassion">Graphic Design</a></td>
+        </tr>
+    </table>
+    <br><br>
+    <!--#endregion-->
+
+    <div class="caixa">
+        <h1 style="text-align: center;">3° Trimestre:</h1>
+        <h2>
+            Conteúdos contemplados: <grey><br>(Aperte para ir até o conteúdo)</grey><br>
+            <a style="text-decoration: none;" href="#conteudo1"><white>Funções Logarítmicas;</white></a><br>
+            <a style="text-decoration: none;" href="#conteudo2"><white>Equação + Função Modular;</white></a><br>
+            <a style="text-decoration: none;" href="#conteudo3"><white>Progressão Aritmética;</white></a><br>
+            <a style="text-decoration: none;" href="#conteudo4"><white>Progressão Geométrica.</white></a><br>
+        </h2>
+    </div>
+
+    <h1 id="conteudo1">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        <h1>Funções Logarítmicas:</h1>
+        <h1>f(x) = log<sub>a</sub>(x) <grey> a > 0; a ≠ 1</grey></h1>
+        
+        <p>Para interpretar ou fazer os graficos, é necessário principalmente entender <a href="tri2.html#conteudo4" style="text-decoration: none; color: lightblue">o que é um logarítmo</a>, depois, entender sobre <b>Domínios</b>.</p>
+        
+        <p>Sobre domínios: o valor do logaritmando deve ser sempre maior que 0, então temos que levar em conta tudo que está dentro de X para saber de onde nossa função começa. Quando descobrimos isso, fazemos uma linha pontilhada vertical no local de início.</p>
+        
+        <p>Supondo que nossa função é: f(x) = log(x-1)</p>
+        <p>Então faremos:</p>
+        <p>x + 1 > 0</p>
+        <p><resp>x > -1</resp></p>
+        <img src="images/logEX1.png">
+
+        <p>Fatos interessantes: </p>
+        <br>
+        <p>Funções logarítmicas e exponenciais são simétricos.</p>
+        <br>
+        <p>Se o logarítmo alcançasse seu domínio, o módulo de Y seria infinito.</p>
+        <br>
+
+        <p>Descobrindo se é decrescente ou crescente: </p>
+        <p>Decrescente: 0 < Base < 1</p>
+        <p>Crescente: Base > 1</p>
+        
+        <p>Por definição, um logarítmo sempre tem corte em X, mas nem sempre em Y, dependendo de seu domínio.</p>
+        <p>Para eixo X: log<sub>Base</sub>(x) = 0</p>
+        <p>Para eixo Y: log<sub>Base</sub>(0) = Y</p>
+
+        <h3>Atividade no GeoGebra:</h3>
+        <iframe src="https://www.geogebra.org/classic/ydxh3w7s?embed" width="1100px" height="600px" allowfullscreen frameborder="0"></iframe>
+        <p>Para desenhar a função:</p>
+        <p>Primeiramente, calculamos o domínio, e então o desenhamos verticalmente;</p>
+        <p>Depois, precisamos coletar valores estratégicos da função, que nos ajudem a localizar os pontos, após isso, os interligamos.</p>
+        <p>Geralmente, na hora de desenhar, pegamos valores que nos ajudam, como por exemplo: em uma função logaritmica com base 2, você pegaria os valores que resultam em 2, 4, 8, 16... no logaritmando.</p>
+        
+        <br>
+        <p>
+            Comentários:
+            <br><br>
+            Entender como a função logarítmica funciona foi um pouco difícil para mim no começo, existem alguns motivos:
+            <br><br>
+            1 - Ideia abstrata: A própria ideia do logaritmo é meio estranha de se entender, quando se aplica no gráfico, e tem muitos valores, me senti meio perdido.
+            <br><br>
+            2 - Interpretação gráfica: A visualização do gráfico é bem dificil, especialmente quando se está começando no conteúdo.
+            <br><br>
+            3 - Contexto prático: Entender a aplicação de funções logarítmicas na vida é meio dificil.
+            <br><br>
+            4 - Resolução das Equações Logarítmicas: Quando você está resolvendo as equações, é muito fácil deixar um erro pra trás, se atrapalhar com algo (especialmente com o domínio), errar é muito fácil se for desatento.
+            <br><br>
+            <pink>Dificuldade</pink>: 7,3
+        </p>
+    </div>
+    
+    <h1 id="conteudo2">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        
+        <h1>Equação + Função Modular:</h1>
+        <h1>f(x) = |x| <grey>partes possuem |, que representa o módulo.</grey></h1>
+        
+        <p>
+            É possível dizer que o módulo de um número, é a distância que ele está de 0, já que:<br>
+            x = |x|<br>
+            -x = |x|
+        </p>
+        <p>
+            também poderia ser representado por:<br>
+            |x| = ±x
+        </p>
+
+        <p>
+            Para resolução, levamos em conta o lado não absoluto da função como positivo, e depois negativo. EX:
+            |3x - 5| = 7<br>
+
+            <lightblue>3x - 5 = 7</lightblue> ou <pink>-(3x - 5) = 7</pink>
+        </p>
+        
+        <p>
+        Para a primeira:<br>
+        3x - 5 = 7<br>
+        3x = 7 + 5<br>
+        3x = 7 + 5<br>
+        3x = 12<br>
+        x = 12 / 3<br><br>
+        <resp>x = 4</resp><br>
+
+        <br>
+        Já para a segunda:<br>
+        -(3x - 5) = 7<br>
+        -3x + 5 = 7<br>
+        -3x = 7 - 5<br>
+        -3x =2<br><br>
+        <resp>x = -<sup>2</sup>/<sub>3</sub></resp><br>
+
+        <br>
+        R = {-<sup>2</sup>/<sub>3</sub>, 4}
+
+        </p>
+
+        <p><br>
+            Mas também existem outros casos, como:<br>
+
+            |2x - 3| = |5 - x|<br>
+
+            Nesses momentos, continuamos fazendo duas contas, uma sem nenhum módulo, e outra com um lado negativo. Já que são equações não faz sentido fazer 4 contas diferentes.<br>
+
+            <lightblue>2x - 3 = 5 - x</lightblue> ou <pink>-(2x - 3) = 5 - x</pink>
+        </p>
+        <p>
+            Para a primeira:<br>
+            2x - 3 = 5 - x<br>
+            3x = 8<br><br>
+            <resp>x = <sup>8</sup>/<sub>3</sub></resp><br></resp><br>
+
+            <br>
+            Já para a segunda:<br>
+            -2x + 3 = 5 - x<br>
+            -x = 2<br><br>
+            <resp>x = -2</resp><br>
+
+            <br>
+            R = {<sup>8</sup>/<sub>3</sub></resp>, -2}
+        </p>
+        
+        <h3>Agora, aplicando em funções:</h3>
+        <p>O que faremos vai ser: construimos a função dentro do módulo normalmente, depois convertemos qualquer valor negativo para positivo, e então, se a função tiver algo fora do módulo, aplicamos.</p>
+        <p>O exemplo mais fácil seria com função afim, então é o que vou fazer.</p>
+
+        <p>Função exemplo: f(x) = |3x + 2| - 4</p>
+        <p>Primeiro passo: construímos só o que está dentro do módulo. <grey>f(x) = 3x + 2</grey></p>
+        <img src = "images/modP1.png">
+        <p>Depois, invertemos o que é negativo.</p>
+        <img src = "images/modP2.png">
+        <p>E só então, adicionamos o que está fora.</p>
+        <img src = "images/modP3.png">
+
+        <p>OBS: Lembre-se que as raízes mudam, e as vezes algo vai possuir mais de 2, como uma função quadrática modular que vai para o lado negativo</p>
+
+        <h3>Atividade no Geogebra:</h3>
+        <iframe src="https://www.geogebra.org/classic/dhacwbus?embed" width="1100px" height="600px" allowfullscreen frameborder="0"></iframe>
+        <p>
+            Comentários:<br>
+            O conteúdo não é muito dificil, a ideia do módulo pode parecer estranha no começo, mas depois você se acostuma, a única coisa que me causou um pouco de dificuldade foi calcular as novas raízes e fazer corretamente a adição dos que ficaram de fora. Creio que me saí bem.<br>
+            <pink>Dificuldade</pink>: 4,1
+        </p>
+    </div>
+    
+    <h1 id="conteudo3">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        
+        <h1>Progressão Aritmética:</h1>
+        <h1>a<sub>n</sub> = a<sub>1</sub> + (n - 1) * r</h1> <grey>encontrar valor na casa N</grey> 
+        <h1>S<sub>n</sub> = (a<sub>1</sub> + a<sub>n</sub>) / 2 * n</h1> <grey>somar todos os valores até a casa N</grey>
+        <h1>a<sub>n</sub> = a<sub>k</sub> + (n - k) * r</h1> <grey>encontrar o valor da casa N, a partir da casa K</grey>
+        <h1>r = a<sub>n</sub> - a<sub>n-1</sub></h1> <grey>encontrar razão</grey>
+        <p>
+            Uma progressão aritmética (PA) é uma sequência numérica em que a diferença entre quaisquer dois termos consecutivos é igual. Essa diferença é chamada de razão e é denotada pela letra "r".
+        </p>
+        <p>Sobre sequências numéricas: elas são várias casas que seguem um padrão de aumento, diminuição ou de continuidade, EX:<br>
+            {1, 2, 3, 4, 5, ...} <grey> r = 1; r > 0</grey> CRESCENTE<br>
+            {5, 4, 3, 2, 1, ...} <grey> r = -1; r < 0</grey> DECRESCENTE<br>
+            {5, 5, 5, 5, 5, ...} <grey> r = 0; r = 0</grey> CONSTANTE
+        </p>
+        <p>
+            Uma PA tem uma relação direta com funções afim <grey>(sem contar os termos entre os valores)</grey>
+        </p>
+        <img src="images/PA.png">
+
+        <p>
+            Comentários:<br>
+            Achei fácil entender o conteúdo, não houve nenhuma dificuldade e o conteúdo conseguiu permear bem.<br>
+            <pink>Dificuldade</pink>: 0,7
+        </p>
+    </div>
+
+    <h1 id="conteudo4">ㅤ</h1>
+    <div class="caixa" style="width: 1100px;">
+        
+        <h1>Progressão Geométrica:</h1>
+        <h1>a<sub>n</sub> = a<sub>1</sub> * q<sup>n-1</sup></h1> <grey>encontrar valor na casa N</grey> 
+        <h1>S<sub>n</sub> = a<sub>1</sub> * (q<sup>n</sup> - 1) / q - 1</h1> <grey>somar todos os valores até a casa N</grey>
+        <h1>S<sub>∞</sub> = a<sub>1</sub>/ 1 - q <grey>(somente quando -1 < q < 1)</grey></h1> <grey>somar todos os valores de uma PG infinita</grey>
+        
+        <h1>a<sub>n</sub> = a<sub>k</sub> * q<sup>n-k</sup></h1> <grey>encontrar o valor da casa N, a partir da casa K</grey>
+        <h1>q = <sup>a<sub>n</sub></sup> / <sub>a<sub>n-1</sub></sub></h1> <grey>encontrar razão</grey>
+        <p>
+            Uma progressão geométrica (ou PG) é uma sequência de números em que cada termo subsequente é obtido multiplicando-se o termo anterior por uma razão, chamada de quociente, e representada por "q".
+        </p>
+        <p>Sobre sequências de uma PG: elas são várias casas que seguem um padrão de aumento, diminuição ou de continuidade, EX:<br>
+            {2, 4, 8, 16, 32, ...} <grey> q = 2; q > 0 e a<sub>1</sub> > 0 ou a<sub>1</sub> < 0 e 1 > q > 0</0></grey> CRESCENTE<br>
+            {-1, -2, -4, -8, -16, ...} <grey> q = 2; q > 0 e a<sub>1</sub> < 0 ou a<sub>1</sub> > 0 e 1 > q > 0</grey> DECRESCENTE<br>
+            {7, 0, 0, 0, 0, ...} <grey> q = 0;</grey> ESTACIONÁRIA<br>
+            {5, -5, 5, -5, 5, ...} <grey> q = -1; q < 0;</grey> ALTERNADA<br>
+            {5, 5, 5, 5, 5, ...} <grey> q = 1 ou a<sub>1</sub> = 0 e q = 0</grey> CONSTANTE
+        </p>
+        <p>
+            Uma PG tem uma relação direta com funções exponenciais <grey>(sem contar os termos entre os valores)</grey>
+        </p>
+        <img src="images/PG.png">
+
+        <p>
+            Comentários:<br>
+            Um pouco mais fácil de se perder, porém, se você tomar cuidado e ficar ligado especialmente nos cálculos de exponencial, fica mais fácil. Não notei muita dificuldade no entendimento.<br>
+            <pink>Dificuldade</pink>: 4,7
+        </p>
+    </div>
+
+
+</body>
+
+</html>
